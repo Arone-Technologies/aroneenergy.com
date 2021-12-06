@@ -1,0 +1,28 @@
+{
+  "name": "aroneenergy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "production": "better-npm-run build:prod",
+    "dev": "better-npm-run build:dev"
+  },
+  "betterScripts": {
+    "build:dev": "npx tailwindcss -i ./src/assets/tailwind.css -o ./public/css/tailwind.css --watch",
+    "build:prod": {
+      "command": "npx tailwindcss -i ./src/assets/tailwind.css -o ./public/css/tailwind.css",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "better-npm-run": "^0.1.1",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
+  }
+}
