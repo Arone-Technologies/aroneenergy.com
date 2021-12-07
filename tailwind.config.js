@@ -9,10 +9,11 @@ module.exports = {
       fontSize: {
         coinbase: "3.875rem",
       },
+      
     },
   },
   variants: {
-    extend: {},
+    extend: {grayscale: ["hover", "focus"]},
   },
   plugins: [],
 };
