@@ -1490,6 +1490,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-full {
+    height: 100%;
+  }
+
   .sm\:max-w-sm {
     max-width: 24rem;
   }
