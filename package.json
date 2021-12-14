@@ -8,7 +8,7 @@
     "dev": "better-npm-run build:dev"
   },
   "betterScripts": {
-    "build:dev": "npx tailwindcss -i ./src/assets/tailwind.css -o ./public/css/tailwind.css --watch",
+    "build:dev": "npx tailwindcss -i ./src/assets/tailwind.css -o ./public/css/tailwind.css",
     "build:prod": {
       "command": "npx tailwindcss -i ./src/assets/tailwind.css -o ./public/css/tailwind.css",
       "env": {
