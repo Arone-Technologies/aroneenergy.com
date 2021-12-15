@@ -142,13 +142,6 @@
         src: url("./css/Montserrat-Bold.ttf");
       }
 
-      .banner {
-        background-image: url(./images/banner.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
       .desktop-nav > a {
         color: white;
       }
@@ -173,13 +166,40 @@
         background-size: cover;
         background-position: center;
       }
+
+      @media only screen and (max-width: 600px) {
+        .bg-banner {
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.3)
+            ),
+            url(./images/banner-mobile.png);
+          background-size: contain;
+          /* background-position: center; */
+          background-repeat: no-repeat;
+          width: 100vw;
+          background-attachment: fixed;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        .bg-banner {
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.3)
+            ),
+            url(./images/banner.png);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
     </style>
   </head>
 
   <body class="">
     <div>
       <!-- Section 5 -->
-      <section class="banner">
+      <section class="bg-banner">
         <div id="overlay-blue">
           <nav class="relative z-50 h-24 select-none hidden md:block">
             <div
@@ -272,7 +292,7 @@
                     ><img
                       src="./images/arone-logo.203639f.png"
                       alt="Arone Logo"
-                    /><span class="text-indigo-600">.</span></a
+                    /><span class="text-blue-900">.</span></a
                   >
                   <div
                     class="
@@ -296,7 +316,7 @@
                         mx-0
                         ml-6
                         font-medium
-                        text-left text-indigo-600
+                        text-left text-blue-900
                         md:ml-0 md:w-auto md:px-0 md:mx-2
                         lg:mx-3
                         md:text-center
@@ -311,7 +331,7 @@
                         mx-0
                         ml-6
                         font-medium
-                        text-left text-indigo-600
+                        text-left text-blue-900
                         md:ml-0 md:w-auto md:px-0 md:mx-2
                         lg:mx-3
                         md:text-center
@@ -326,7 +346,7 @@
                         mx-0
                         ml-6
                         font-medium
-                        text-left text-indigo-600
+                        text-left text-blue-900
                         md:ml-0 md:w-auto md:px-0 md:mx-2
                         lg:mx-3
                         md:text-center
@@ -345,7 +365,7 @@
                         md:ml-0 md:w-auto md:px-4 md:mx-2
                         lg:mx-3
                         md:text-center
-                        bg-yellow-500
+                        bg-yellow-400
                         rounded-3xl
                       "
                       >Buy now</a
@@ -366,7 +386,7 @@
                       <img
                         src="./images/arone-logo.203639f.png"
                         alt="Logo"
-                        class="ml-4 w-32 lg:w-full h-6"
+                        class="ml-4 w-32 lg:w-full h-4 md:h-6"
                       />
                     </a>
                   </div>
@@ -474,18 +494,7 @@
             leave-to-class="opacity-0 scale-95"
           >
           </transition>
-          <div
-            class="
-              container
-              items-center
-              max-w-6xl
-              px-10
-              mx-auto
-              sm:px-20
-              md:px-32
-              lg:px-16
-            "
-          >
+          <div class="container items-center max-w-6xl px-10 mx-auto">
             <div class="flex flex-wrap items-center -mx-3 md:min-h-screen">
               <div class="order-1 w-full px-3 lg:w-3/5 lg:order-0 lg:pt-20">
                 <div class="w-full">
@@ -591,13 +600,13 @@
               font-medium
               px-8
               bg-gray-300
-              text-indigo-800
+              text-blue-900
             "
           >
             <div class="py-8 w-full md:w-auto">
               <div class="flex justify-center md:hidden">
                 <svg
-                  class="w-12 h-12 my-4 text-blue-400"
+                  class="w-12 h-12 my-4 text-blue-900"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -616,7 +625,7 @@
             <div class="py-8 w-full md:w-auto">
               <div class="flex justify-center md:hidden">
                 <svg
-                  class="w-12 h-12 my-4 text-blue-400"
+                  class="w-12 h-12 my-4 text-blue-900"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -642,7 +651,7 @@
             <div class="py-8 w-full md:w-auto">
               <div class="flex justify-center md:hidden">
                 <svg
-                  class="w-12 h-12 my-4 text-blue-400"
+                  class="w-12 h-12 my-4 text-blue-900"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -661,26 +670,7 @@
             <div class="py-8 w-full md:w-auto">
               <div class="flex justify-center md:hidden">
                 <svg
-                  class="w-12 h-12 my-4 text-blue-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
-                  ></path>
-                </svg>
-              </div>
-              <div class="text-center">Zero pollution</div>
-            </div>
-            <div class="py-8 w-full md:w-auto">
-              <div class="flex justify-center md:hidden">
-                <svg
-                  class="w-12 h-12 my-4 text-blue-400"
+                  class="w-12 h-12 my-4 text-blue-900"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -759,7 +749,7 @@
                     </span>
                     <!-- <span class="block mt-2 text-center">Or </span> -->
                     <span class="block mt-2"
-                      >TV & 3 Light bulbs for 10 hours.
+                      >45 watts TV & 3 Light bulbs for 10 hours.
                     </span>
                   </h2>
                   <ul id="powerhub-pro-features" class="flex-1 space-y-4">
@@ -851,7 +841,7 @@
                     </span>
                     <!-- <span class="block mt-2 text-center">Or </span> -->
                     <span class="block mt-2"
-                      >TV & 3 Light bulbs for 15 hours.
+                      >45 watts TV & 3 Light bulbs for 15 hours.
                     </span>
                   </h2>
                   <ul id="powerhub-pro-features" class="flex-1 space-y-4">
@@ -938,7 +928,7 @@
                         px-8
                         rounded-lg
                       "
-                      href="https://paystack.com/buy/powerhub"
+                      href="https://paystack.com/buy/powerhub-pro"
                       >Buy</a
                     >
                   </div>
@@ -960,7 +950,10 @@
             >
               PowerHub
             </div>
-            <div class="w-80 h-80 bg-powerhub relative" id="anim-power-image">
+            <div
+              class="w-64 md:w-80 h-64 md:h-80 bg-powerhub relative"
+              id="anim-power-image"
+            >
               <img
                 src="images/badge.png"
                 class="
@@ -968,7 +961,7 @@
                   w-32
                   h-28
                   object-cover
-                  right-0
+                  -right-4
                   -top-8
                   md:-right-8
                 "
@@ -1395,7 +1388,7 @@
                     </span>
                     <!-- <span class="block mt-2 text-center">Or </span> -->
                     <span class="block mt-2"
-                      >TV & 3 Light bulbs for 15 hours.
+                      >45 watts TV & 3 Light bulbs for 15 hours.
                     </span>
                   </h2>
                   <ul id="powerhub-pro-features" class="flex-1 space-y-4">
@@ -1482,7 +1475,7 @@
                         px-8
                         rounded-lg
                       "
-                      href="https://paystack.com/buy/powerhub"
+                      href="https://paystack.com/buy/powerhub-pro"
                       >Buy</a
                     >
                   </div>
@@ -1503,7 +1496,7 @@
             >
               PowerHub Pro
             </div>
-            <div class="w-80 h-80 bg-powerhub-pro relative">
+            <div class="w-64 md:w-80 h-64 md:h-80 bg-powerhub-pro relative">
               <img
                 src="images/badge.png"
                 class="
@@ -1881,8 +1874,8 @@
         </div>
       </section>
 
-      <section class="my-20 text-gray-700">
-        <div class="w-2/3 mx-auto mb-12">
+      <section class="my-0 text-gray-700">
+        <div class="w-full mx-auto">
           <object
             data="https://www.youtube.com/embed/FsBRzmRF2I0?autoplay=1"
             class="w-full h-80 md:h-screen"
@@ -1899,8 +1892,8 @@
         >
           <div class="mt-10 lg:mt-0">
             <img
-              src="./images/small-business.png"
-              class="w-60 h-60"
+              src="./images/IMG_9342.png"
+              class="w-60 h-60 lg:w-80 lg:w-80"
               srcset=""
             />
             <div class="font-base text-center font-medium mt-2">
@@ -1908,29 +1901,22 @@
             </div>
           </div>
           <div class="mt-10 lg:mt-0">
-            <img src="./images/apartments.png" class="w-60 h-60" srcset="" />
+            <img
+              src="./images/apartments.png"
+              class="w-60 h-60 lg:w-80 lg:w-80"
+              srcset=""
+            />
             <div class="font-base text-center font-medium mt-2">Apartments</div>
           </div>
           <div class="mt-10 lg:mt-0">
             <img
-              src="./images/powerhub-user.png"
+              src="./images/powerhub-quality.webp"
               alt="Government offices"
-              class="w-60 h-60"
+              class="w-60 h-60 lg:w-80 lg:w-80"
               srcset=""
             />
             <div class="font-base text-center font-medium mt-2">
               Individuals
-            </div>
-          </div>
-          <div class="mt-10 lg:mt-0">
-            <img
-              src="https://ios-inc.com/wp-content/uploads/2015/01/Depositphotos_10770843_m.jpg"
-              alt="Government offices"
-              class="w-60 h-60"
-              srcset=""
-            />
-            <div class="font-base text-center font-medium mt-2">
-              Government Offices
             </div>
           </div>
         </div>
@@ -1943,13 +1929,21 @@
           Our Impact
         </h2>
         <div
-          class="flex flex-wrap justify-center lg:justify-between mt-8 lg:mx-10 py-12 mb-12"
+          class="
+            flex flex-wrap
+            justify-center
+            lg:justify-between
+            mt-8
+            lg:mx-10
+            py-12
+            mb-12
+          "
         >
           <div class="w-64 mt-8 md:mt-0">
             <div class="flex justify-center">
-              <img class="w-32 h-32 my-4" src="./images/POWERHUB-w.png"/>
+              <img class="w-32 h-32 my-4" src="./images/POWERHUB-w.png" />
             </div>
-            <h3 class="text-center text-2xl lg:text-4xl font-semibold">
+            <h3 class="text-center text-3xl lg:text-5xl font-semibold my-4">
               <span class="font-bold">20</span>
             </h3>
             <div class="text-center text-gray-100 text-base font-medium">
@@ -1957,10 +1951,10 @@
             </div>
           </div>
           <div class="w-64 mt-8 md:mt-0">
-             <div class="flex justify-center">
-              <img class="w-32 h-32 my-4" src="./images/PIGGY.png"/>
+            <div class="flex justify-center">
+              <img class="w-32 h-32 my-4" src="./images/PIGGY.png" />
             </div>
-            <h3 class="text-center text-2xl lg:text-4xl font-semibold">
+            <h3 class="text-center text-3xl lg:text-5xl font-semibold my-4">
               <span class="font-bold">₦7.3M</span>
             </h3>
             <div class="text-center text-gray-100 text-base font-medium">
@@ -1970,9 +1964,22 @@
           </div>
           <div class="w-64 mt-8 md:mt-0">
             <div class="flex justify-center">
-              <svg class="w-32 h-32 my-4 text-white" style="fill:white" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
-<path id="XMLID_1419_" d="M428.814,402.168l-20.067-204.701c-0.334-51.42-34.771-96.3-83.948-111.761
+              <svg
+                class="w-32 h-32 my-4 text-white"
+                style="fill: white"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 490 490"
+                style="enable-background: new 0 0 490 490"
+                xml:space="preserve"
+              >
+                <path
+                  id="XMLID_1419_"
+                  d="M428.814,402.168l-20.067-204.701c-0.334-51.42-34.771-96.3-83.948-111.761
 	C324.933,83.82,325,81.919,325,80c0-44.112-35.888-80-80-80s-80,35.888-80,80c0,1.919,0.068,3.82,0.201,5.706
 	c-49.177,15.461-83.614,60.341-83.949,111.761L61.186,402.168C43.111,408.013,30,425.004,30,445c0,24.813,20.187,45,45,45h340
 	c24.813,0,45-20.187,45-45C460,425.004,446.89,408.013,428.814,402.168z M245,30c27.57,0,50,22.43,50,50
@@ -1981,41 +1988,26 @@
 	c0-38.079,25.303-71.477,61.689-83.493C185.893,141.496,213.327,160,245,160c31.673,0,59.107-18.504,72.061-45.268
 	c36.387,12.017,61.689,45.414,61.689,83.493c0,0.489,0.023,0.977,0.071,1.463L398.458,400H91.542L111.178,199.689z M415,460H75
 	c-8.271,0-15-6.729-15-15c0-8.232,6.666-14.937,14.883-15c0.105,0.001,0.209,0,0.313,0h339.607c0.104,0.001,0.207,0.001,0.313,0
-	c8.217,0.063,14.883,6.768,14.883,15C430,453.271,423.271,460,415,460z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
-
+	c8.217,0.063,14.883,6.768,14.883,15C430,453.271,423.271,460,415,460z"
+                />
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </svg>
             </div>
-            <h3 class="text-center text-2xl lg:text-4xl font-semibold">
+            <h3 class="text-center text-3xl lg:text-5xl font-semibold my-4">
               <span class="font-bold">2.3 million</span>
             </h3>
             <div class="text-center text-gray-100 text-base font-medium">
@@ -2083,9 +2075,9 @@
               md:gap-28
             "
           >
-            <div class="flex items-center justify-center col-span-1">
+            <div class="flex items-center justify-center col-span-1 hidden">
               <img
-                src="https://www.un-spider.org/sites/default/files/GIZ.jpg"
+                src="https://th.bing.com/th/id/R.bd3bd552b71dda7d9ffda7f12a893856?rik=b4ix2LaHXGqYWQ&pid=ImgRaw&r=0"
                 alt="GIZ logo"
                 class="
                   block
@@ -2097,7 +2089,7 @@
                 "
               />
             </div>
-            <div class="flex items-center justify-center col-span-1">
+            <div class="flex items-center justify-center col-span-1 hidden">
               <img
                 src="https://cdn.vanguardngr.com/wp-content/uploads/2019/09/pic-1-16.png"
                 alt="Shell"
@@ -2111,9 +2103,9 @@
                 "
               />
             </div>
-            <div class="flex items-center justify-center col-span-1">
+            <div class="flex items-center justify-center col-span-1 hidden">
               <img
-                src="https://acceldxlab.com/images/logo-acceldxlab.png"
+                src="https://www.thecommonwealth.io/wp-content/uploads/2020/10/UNDP.png"
                 alt="UN Accel"
                 class="
                   block
@@ -2154,7 +2146,7 @@
                 "
               />
             </div>
-            <div class="flex items-center justify-center col-span-1">
+            <div class="flex items-center justify-center col-span-1 hidden">
               <img
                 src="https://www.greengrowthknowledge.org/sites/default/files/images/thumbnails/organization/NCIC%20logo%201080.png"
                 alt="NCIC"
@@ -2202,46 +2194,9 @@
         </div>
       </section>
 
-      <section class="mt-8">
-        <h2 class="py-2 lg:py-12 text-xl lg:text-3xl font-semibold text-center">
-          Gallery
-        </h2>
-        <div
-          class="flex flex-wrap justify-center lg:justify-between mt-8 lg:mx-60"
-        >
-          <div class="mt-10 lg:mt-0">
-            <img
-              src="./images/powerhub-blender.png"
-              class="w-60 h-60"
-              srcset=""
-            />
-            <div class="font-base text-center font-medium mt-2">
-              Powering A blender
-            </div>
-          </div>
-          <div class="mt-10 lg:mt-0">
-            <img src="./images/apartments.png" class="w-60 h-60" srcset="" />
-            <div class="font-base text-center font-medium mt-2">
-              Use in Homes
-            </div>
-          </div>
-          <div class="mt-10 lg:mt-0">
-            <img
-              src="./images/powerhub-inshop.png"
-              class="w-60 h-60"
-              srcset=""
-            />
-            <div class="font-base text-center font-medium mt-2">
-              Powering a Shop
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Section 10 -->
       <section
         class="
-          mt-8
           py-10
           lg:py-20
           grid grid-cols-1

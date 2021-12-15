@@ -7,3 +7,6 @@
 }
 
 @tailwind utilities;
+@layer utilities {
+
+}
