@@ -1278,21 +1278,18 @@ video {
   padding-bottom: 1rem;
 }
 
-<<<<<<< HEAD
 .pb-12 {
   padding-bottom: 3rem;
 }
 
->>>>>>> 35ae30a65205718c92ff2a318efd088892abcf75
 .pb-14 {
   padding-bottom: 3.5rem;
 }
+
 .pl-8 {
   padding-left: 2rem;
 }
 
-=======
->>>>>>> 35ae30a65205718c92ff2a318efd088892abcf75
 .pl-14 {
   padding-left: 3.5rem;
 }
@@ -1800,8 +1797,11 @@ video {
 
   .lg\:items-center {
     align-items: center;
+  }
 
   .lg\:justify-center {
+    justify-content: center;
+  }
 
   .lg\:justify-between {
     justify-content: space-between;
