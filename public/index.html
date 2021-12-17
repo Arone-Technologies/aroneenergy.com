@@ -102,12 +102,8 @@
       href="/_nuxt/icons/icon_512x512.e3e9fb.png"
       sizes="512x512"
     />
-    <link
-      data-n-head="1"
-      rel="manifest"
-      href="/_nuxt/manifest.e603a982.json"
-      data-hid="manifest"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <script
       data-n-head="1"
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -115,6 +111,7 @@
       charset="utf-8"
     ></script>
     <!-- axios -->
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script
       data-n-head="1"
@@ -176,7 +173,7 @@
               rgba(0, 0, 0, 0.3)
             ),
             url(./images/banner-mobile.png);
-          background-size: contain;
+          background-size: auto;
           /* background-position: center; */
           background-repeat: no-repeat;
           width: 100vw;
@@ -195,11 +192,79 @@
           background-repeat: no-repeat;
         }
       }
+      .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
     </style>
   </head>
 
   <body class="">
     <div>
+      <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+              <h2 class="modal__title" id="modal-1-title">
+                Pre Order the powerhub
+              </h2>
+              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+              <a class="flex flex-wrap my-10" href="https://paystack.com/buy/powerhub">
+                <img
+                src="./images/powerhub-image.png"
+                alt="Powerhub"
+                class="w-24 h-20 border-4rounded"
+            />
+                <div class="mx-8">
+                  <div class="text-base font-bold text-center">
+                    Powerhub 
+                    </div>
+                    <div class="text-sm my-4 font-medium text-center">
+                      Buy now at N130,000
+                    </div>
+                </div>
+              </a>
+
+              <a class="flex flex-wrap" href="https://paystack.com/buy/powerhub-pro">
+                <img
+                src="./images/powerhub-pro.jpg"
+                alt="Powerhub"
+                class="w-24 h-20 border-4rounded"
+            />
+                <div class="mx-8">
+                  <div class="text-base font-bold text-center">
+                    Powerhub  Pro
+                    </div>
+                    <div class="text-sm my-4 font-medium text-center">
+                      Buy now at N210,000
+                    </div>
+                </div>
+              </a>
+              <div></div>
+            </main>
+            <footer class="modal__footer">
+              <!-- <button class="modal__btn modal__btn-primary">Continue</button>
+              <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button> -->
+            </footer>
+          </div>
+        </div>
+      </div>
       <!-- Section 5 -->
       <section class="bg-banner">
         <div id="overlay-blue">
@@ -342,7 +407,7 @@
                       "
                       >Products</a
                     ><a
-                      href="https://paystack.com/buy/powerhub-pro"
+                      id="buy-now"
                       class="
                         inline-block
                         w-full
@@ -434,7 +499,7 @@
                 </li>
                 <li>
                   <a
-                    href="#pre-order"
+                    id="buy-now-mobile"
                     class="
                       block
                       text-sm
@@ -474,7 +539,7 @@
                 <div class="w-full">
                   <h2
                     title="Where Can I get Inverters in Nigeria"
-                    class="
+                    class=" py-10 sm:py-0
                       mb-4
                       text-3xl text-gray-100
                       font-bold
@@ -487,6 +552,8 @@
                     The Powerhub, reduces the cost barrier to access 24/7
                     electricity for 100 million Nigerians.
                   </h2>
+
+                  
                   <p
                     class="
                       mb-4
@@ -953,7 +1020,7 @@
               PowerHub
             </div>
             <div
-              class="w-64 md:w-80 h-64 md:h-80 bg-powerhub relative"
+              class="w-72 md:w-80 h-72 md:h-80 bg-powerhub relative"
               id="anim-power-image"
             >
               <img
@@ -1496,7 +1563,7 @@
             >
               PowerHub Pro
             </div>
-            <div class="w-64 md:w-80 h-64 md:h-80 bg-powerhub-pro relative">
+            <div class="w-72 md:w-80 h-72 md:h-80 bg-powerhub-pro relative">
               <img
                 src="images/badge.png"
                 class="
@@ -2037,7 +2104,6 @@
                 lg:text-2xl
                 font-semibold
                 text-gray-500 text-center
-                md:text-left md:mx-16
               "
             >
               Our Partners
@@ -2114,10 +2180,11 @@
                 "
               />
             </div>
-            <div class="flex items-center justify-center col-span-1 hidden">
+            <!-- <div class="flex items-center justify-center col-span-1 hidden"> -->
 
             <div class="flex items-center justify-center col-span-1">
               <img
+              class="
                   block
                   object-contain
                   h-7
@@ -2127,11 +2194,10 @@
                   hover:grayscale-0
                 "
               />
-              -->
             </div>
             <div class="flex items-center justify-center col-span-1">
               <img
-                src="data:image/jpeg;base64,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"
+                src="./images/unn.png"
                 alt="UNN"
                 class="
                   block
@@ -2178,7 +2244,7 @@
           <div class="col-span-1 flex justify-center md:justify-end py-10">
             <img
               src="./images/powerhub-user.jpeg"
-              class="w-64 xl:w-72 h-64 relative md:-right-20"
+              class="w-68 xl:w-72 h-64 relative md:-right-20"
             />
           </div>
           <div
@@ -2187,7 +2253,7 @@
             "The Powerhub is a dream come through for me. Now I don’t spend on
             fuel anymore and I can be guaranteed of electricity throughout my
             work hours."
-            <div class="text-right mt-1">"Chinyere Udoh"</div>
+            <div class="text-right mt-1">- Chinyere Udoh</div>
           </div>
           
         </div>
@@ -2204,6 +2270,7 @@
           text-white
         "
       >
+      <a href="https://api.whatsapp.com/send?phone=+2349067710551&text=Hello%21%20Arone Energy" class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
         <div class="col-span-1 mt-4 pl-14">
           <span class="flex gap-2"
             ><img
@@ -2250,6 +2317,7 @@
     </div>
   </body>
   <script>
+    MicroModal.init();
     function ToggleSlide() {
       // remove all animate-fade classes
       document.querySelectorAll(".animate-fade").forEach(function (el) {
@@ -2284,5 +2352,12 @@
     }
     $("#right-arrow").on("click", ToggleSlide);
     $("#left-arrow").on("click", ToggleSlide);
+    $("#buy-now").on("click", function () {
+      MicroModal.show("modal-1");
+    });
+    $("#buy-now-mobile").on("click", function () {
+      MicroModal.show("modal-1");
+    });
+    // 
   </script>
 </html>

@@ -453,7 +453,8 @@ textarea::placeholder {
   color: #9ca3af;
 }
 
-button {
+button,
+[role="button"] {
   cursor: pointer;
 }
 
@@ -847,6 +848,10 @@ video {
   height: 16rem;
 }
 
+.h-72 {
+  height: 18rem;
+}
+
 .h-80 {
   height: 20rem;
 }
@@ -885,6 +890,10 @@ video {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-72 {
+  width: 18rem;
 }
 
 .w-auto {
@@ -1534,6 +1543,11 @@ video {
     padding-right: 5rem;
   }
 
+  .sm\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1561,11 +1575,6 @@ video {
   .md\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-  }
-
-  .md\:mx-16 {
-    margin-left: 4rem;
-    margin-right: 4rem;
   }
 
   .md\:my-0 {
@@ -1700,10 +1709,6 @@ video {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 
   .md\:text-center {
