@@ -18,3 +18,6 @@ Note: Update images for the Luminar Max.
 Replace “Our Customers” with “Customer Reviews”
 Dynamic floating/ movement of reviews from customers.  replaces customer segments
 Our partners - AfriClim Accelerator, Energia Ventures & University Of Nigeria
+
+let state = 0
+function switchState(){ state = (state + 1) % 3}
