@@ -4,25 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "production": "better-npm-run build:prod",
-    "dev": "better-npm-run build:dev"
-  },
-  "betterScripts": {
-    "build:dev": "npx tailwindcss -i ./src/assets/tailwind.css -o ./public/css/tailwind.css",
-    "build:prod": {
-      "command": "npx tailwindcss -i ./src/assets/tailwind.css -o ./public/css/tailwind.css",
-      "env": {
-        "NODE_ENV": "production"
-      }
-    }
+    "production": "npx tailwindcss -i ./src/assets/tailwind.css -o ./public/css/tailwind.css",
+    "watch": "npx tailwindcss -i ./src/assets/tailwind.css -o ./public/css/tailwind.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "better-npm-run": "^0.1.1",
-    "postcss": "^8.4.4",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^3.1.8"
   }
 }
