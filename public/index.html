@@ -160,6 +160,8 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+        background-color: #fff;
+        color: #000;
       }
 
       @font-face {
@@ -199,13 +201,14 @@
       }
 
       .bg-Luminar-pro {
-        background: url("./images/Luminar-max.png");
+        background: url("./images/Luminar-mini.png");
         background-size: cover;
         background-position: center;
       }
 
       .bg-Luminar-max {
-        background: url("./images/Luminar-max.png");
+        /* background: url("./images/Luminar-max.png"); */
+        background: url("./images/Luminar-mini.png");
         background-size: cover;
         background-position: center;
       }
@@ -360,10 +363,12 @@
                   <a
                     href="#_"
                     class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden"
-                    ><img
+                    >
+                    <!-- <img
                       src="./images/arone-logo.203639f.png"
                       alt="Arone Logo"
-                    /><span class="text-blue-900">.</span></a
+                    /> -->
+                    <span class="text-blue-900">.</span></a
                   >
                   <div
                     class="flex flex-col items-start justify-end w-full space-x-6 text-center lg:space-x-8 md:w-full md:mt-0 md:flex-row md:items-end"
@@ -395,9 +400,9 @@
                     <!-- Website Logo -->
                     <a href="#" class="flex items-center py-4 px-2">
                       <img
-                        src="./images/arone-logo.203639f.png"
+                        src="./images/arone-logo-2.png"
                         alt="Logo"
-                        class="ml-4 w-32 lg:w-full h-4 md:h-6"
+                        class="ml-4 w-32 lg:w-full h-10 md:h-6"
                       />
                     </a>
                   </div>
@@ -766,7 +771,7 @@
                         ></path>
                       </svg>
                       <span class="ml-3 text-base font-medium"
-                        >1000VA Maximum power output</span
+                        >1KVA Maximum power output</span
                       >
                     </li>
                     <li class="flex items-start">
@@ -1010,11 +1015,7 @@
               class="w-64 md:w-80 h-64 md:h-80 bg-Luminar-mini relative"
               id="anim-power-image"
             >
-              <img
-                src="images/badge.png"
-                class="absolute w-32 h-28 object-cover -right-4 -top-8 md:-right-8"
-                alt="badge"
-              />
+             
             </div>
             <div class="flex flex-nowrap w-full justify-between mt-4">
               <svg
@@ -1515,12 +1516,8 @@
               Luminar Pro
             </div>
             <div class="w-64 md:w-80 h-64 md:h-80 bg-Luminar-pro relative">
-              <img
-                src="images/badge.png"
-                class="absolute w-32 h-28 object-cover -right-4 -top-8 md:-right-8"
-                alt="badge"
-              />
-              <img src="images/apartments.png" alt="" />
+               
+              <!-- <img src="images/apartments.png" alt="" /> -->
             </div>
             <div class="flex pb-9 flex-nowrap w-full justify-between mt-4">
               <svg
@@ -2000,11 +1997,7 @@
               Luminar Max
             </div>
             <div class="w-64 md:w-80 h-64 md:h-80 bg-Luminar-pro relative">
-              <img
-                src="images/badge.png"
-                class="absolute w-32 h-28 object-cover -right-4 -top-8 md:-right-8"
-                alt="badge"
-              />
+               
             </div>
             <div class="flex flex-nowrap w-full justify-between mt-4">
               <svg
@@ -2431,61 +2424,6 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-
-      <!-- <section class="bg-arone-blue text-white">
-        <h2
-          class="py-8 lg:py-12 text-xl lg:text-3xl font-semibold text-center text-gray-100"
-        >
-          Customer Stories
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 py-12">
-          <div class="col-span-1"></div>
-          <div
-            class="bg-black text-white mx-8 col-span-2 min-h-80 p-10 md:p-20"
-          >
-            "The Luminar is a dream come through for me. Now I don’t spend on
-            fuel anymore and I can be guaranteed of electricity throughout my
-            work hours."
-            <div class="text-right mt-5">- Chinyere Udoh</div>
-          </div>
-        </div>
-        <!-- <h2 class="py-12 text-xl lg:text-3xl font-semibold text-center">
-          Customer Reviews
-        </h2>
-        <div
-          class="flex flex-wrap justify-center lg:justify-between mt-8 lg:mx-10"
-        >
-          <div class="mt-10 lg:mt-0">
-            <img
-              src="./images/IMG_9342.png"
-              class="w-60 h-48 lg:h-72 lg:w-96 rounded-2xl"
-              alt="couple watching movies with Luminar"
-            />
-            <div class="font-base text-center font-medium mt-2">
-              Small Businesses
-            </div>
-          </div>
-          <div class="mt-10 lg:mt-0">
-            <img
-              src="./images/apartments.png"
-              class="w-60 h-48 lg:h-72 lg:w-96 rounded-2xl"
-              alt="individuals using the Luminar to work"
-            />
-            <div class="font-base text-center font-medium mt-2">Apartments</div>
-          </div>
-          <div class="mt-10 lg:mt-0">
-            <img
-              src="./images/Luminar-quality.jpg"
-              class="w-60 h-48 lg:h-72 lg:w-96 rounded-2xl"
-              alt="shop owners with electricity thanks to Luminar"
-            />
-            <div class="font-base text-center font-medium mt-2">
-              Individuals
-            </div>
-          </div>
-        </div> 
-      </section>-->
-
       <section class="pt-12 bg-arone-blue text-white" id="about">
         <h2
           class="py-2 lg:py-12 text-2xl lg:text-4xl font-semibold text-center"
@@ -2497,7 +2435,7 @@
         >
           <div class="w-64 mt-8 md:mt-0">
             <div class="flex justify-center">
-              <img class="w-64 h-32 my-4" src="./images/Luminar-max.png" />
+              <img  class="w-32 h-32 my-4" src="./images/POWERHUB-w.png" />
             </div>
             <h3 class="text-center text-3xl lg:text-5xl font-semibold my-4">
               <span class="font-bold">70</span>
@@ -2582,7 +2520,7 @@
               title="Luminar Partners"
               class="py-2 lg:py-8 text-xl lg:text-2xl font-semibold text-gray-500 text-center"
             >
-              Our Partners
+              Proudly Supported By
             </h2>
             <div
               class="font-base tracking-wide w-full md:w-64 text-center lg:text-left"
@@ -2636,13 +2574,13 @@
                 class="block object-contain h-20 filter grayscale hover:grayscale-0"
               />
             </div>
-            <div class="flex items-center justify-center col-span-1">
+            <!-- <div class="flex items-center justify-center col-span-1">
               <img
                 src="./images/energia logo.webp"
                 alt="energia"
                 class="block object-contain h-20 filter grayscale hover:grayscale-0"
               />
-            </div>
+            </div> -->
             <div class="flex items-center justify-center col-span-1">
               <img
                 src="./images/africlimlogo.png"
@@ -2710,7 +2648,7 @@
             <div class="hidden text-blue-400 text-xl">Arone Energy</div>
           </span>
           <div class="text-sm font-medium text-gray-50 pl-4 lg:pl-10">
-            sustainable electricity for all.
+            Freedom Of Power.
           </div>
         </div>
         <div class="col-span-1 pl-14 text-white text-sm mt-8 lg:mt-0">
