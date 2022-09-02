@@ -141,7 +141,11 @@
       .swiper {
         height: 250px;
       }
-
+      .swiper-slide > div{
+        height: 100%;
+        min-height: 100%;
+        background-color: #fff;
+      }
       .swiper-slide {
         text-align: center;
         height: 250px;
@@ -160,7 +164,6 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
-        background-color: #fff;
         color: #000;
       }
 
@@ -198,12 +201,14 @@
         /* background: url("./images/Luminar-mini.png"); */
         background-size: cover;
         background-position: center;
+        
       }
 
       .bg-Luminar-pro {
-        /* background: url("./images/Luminar-mini.png"); */
+        /*  background: url("./images/Luminar-mini.png"); */
         background-size: cover;
         background-position: center;
+        
       }
 
       .bg-Luminar-max {
@@ -304,7 +309,7 @@
 
               <a
                 class="flex flex-wrap"
-                href="https://paystack.com/buy/powerhub-pro"
+                href="https://paystack.com/buy/powerhub"
               >
                 <img
                   src="./images/Luminar-pro.jpg"
@@ -899,11 +904,13 @@
                   </ul>
                   <div class="mt-4">
                     <a
+
                       class="font-semibold text-white bg-blue-500 py-2 px-8 rounded-lg"
                       href="https://paystack.com/buy/powerhub-pro"
                       >Buy</a
                     >
                   </div>
+                 
                 </div>
                 <div class="w-full hidden" id="features-3">
                   <h2
@@ -1004,13 +1011,14 @@
                   <div class="mt-4">
                     <a
                       class="font-semibold text-white bg-blue-500 py-2 px-8 rounded-lg"
-                      href="https://paystack.com/buy/powerhub-pro"
+                      href="https://paystack.com/buy/luminar-max-ncmfdv"
                       >Buy</a
                     >
                   </div>
                 </div>
               </div>
             </div>
+            
           </div>
           <div class="flex flex-col mt-8 mx-auto md:mt-10">
             <div
@@ -1023,8 +1031,7 @@
               class="w-64 md:w-80  md:h-80 relative "
               id="anim-power-image"
             >
-            <video width="500" height="500"  autoplay muted loop class=" md:max-w-[180%] md:max-h-[120%] bg-transparent">
-              <source src="./video/Luminar2.mp4" type="video/mp4">
+            <video width="500"  type="video/mp4"  id="video-source" height="500" src="./video/LuminarMinianimation.mp4" autoplay muted loop class=" md:max-w-[180%] md:max-h-[120%] bg-transparent">
               Your browser does not support the video tag.
             </video>
 
@@ -1423,6 +1430,9 @@
               class="flex flex-wrap items-center -mx-3 animate left"
               id="Luminar-slide"
             >
+
+
+            
               <div class="order-1 w-full px-3 lg:order-0">
                 <div class="w-full">
                   <h2
@@ -1539,7 +1549,7 @@
             </div>
             <div class="w-64 md:w-80 py-3 md:h-80 bg-Luminar-pro relative">
               <video width="500" height="500"  autoplay muted loop class=" md:max-w-[180%] md:max-h-[120%] bg-transparent">
-                <source src="./video/Luminar2.mp4" type="video/mp4">
+                <source src="./video/Luminarv31proanimation(1).mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <!-- <img src="images/apartments.png" alt="" /> -->
@@ -2011,7 +2021,7 @@
                   <div class="mt-4">
                     <a
                       class="font-semibold text-white bg-blue-500 py-2 px-8 rounded-lg"
-                      href="https://paystack.com/buy/powerhub-pro"
+                      href="https://paystack.com/buy/luminar-max-ncmfdv"
                       >Buy</a
                     >
                   </div>
@@ -2027,7 +2037,7 @@
             </div>
             <div class="w-64 md:w-80 py-5 md:h-80 bg-Luminar-pro relative">
               <video width="500" height="500"  autoplay muted loop class=" md:max-w-[180%] md:max-h-[120%] bg-transparent">
-                <source src="./video/Luminar2.mp4" type="video/mp4">
+                <source src="./video/LuminarMaxanimation.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video> 
             </div>
@@ -2409,8 +2419,8 @@
           >
             Customer Reviews
           </h2>
-          <div class="swiper mySwiper bg-white">
-          <div class="swiper-wrapper">
+          <div class="swiper mySwiper">
+          <div class="swiper-wrapper w-full h-full">
 
 
             <div
@@ -2449,7 +2459,7 @@
                           <div className="col-span-1">"It is noiseless. It charges my laptop for more than three-cycles. The customer service delivery is the best so far I have seen in the country"
                             <div class="text-right mt-5 mr-5">-Mr.Aroh,Lagos State</div>
                           </div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination" style="min-height: auto; height: auto; background:transparent"></div>
                       </div>
           </div>
 </div>
@@ -2737,7 +2747,7 @@
       breakpoints: {
           768: {
             slidesPerView: 3,
-            spaceBetween: 2,
+            spaceBetween: 40,
           },
         },
        autoplay: {
@@ -2764,11 +2774,12 @@
           $("#power-text").addClass("animate-fade");
           $("#anim-power-image").addClass("animate-fade");
           setTimeout(() => {
-            $("#anim-power-image").removeClass("bg-Luminar");
+            // $("#anim-power-image").removeClass("bg-Luminar");
             $("#features-1").addClass("hidden");
             $("#features-3").addClass("hidden");
             $("#features-2").removeClass("hidden");
-            $("#anim-power-image").addClass("bg-Luminar-pro");
+            // $("#anim-power-image").addClass("bg-Luminar-pro");
+            $("#video-source").attr('src','./video/Luminarv31proanimation(1).mp4')
             $("#power-text").html("Luminar Pro");
           }, 1000);
           break;
@@ -2778,11 +2789,11 @@
           $("#power-text").addClass("animate-fade");
           $("#anim-power-image").addClass("animate-fade");
           setTimeout(() => {
-            $("#anim-power-image").removeClass("bg-Luminar");
+            // $("#anim-power-image").removeClass("bg-Luminar");
             $("#features-1").addClass("hidden");
             $("#features-2").addClass("hidden");
             $("#features-3").removeClass("hidden");
-            $("#anim-power-image").addClass("bg-Luminar-max");
+            $("#video-source").attr('src','./video/LuminarMaxanimation.mp4')
             $("#power-text").html("Luminar Max");
           }, 1000);
           break;
@@ -2792,11 +2803,12 @@
           $("#power-text").addClass("animate-fade");
           $("#anim-power-image").addClass("animate-fade");
           setTimeout(() => {
-            $("#anim-power-image").removeClass("bg-Luminar");
+            // $("#anim-power-image").removeClass("bg-Luminar");
             $("#features-2").addClass("hidden");
             $("#features-3").addClass("hidden");
             $("#features-1").removeClass("hidden");
-            $("#anim-power-image").addClass("bg-Luminar-mini");
+            // $("#anim-power-image").addClass("bg-Luminar-mini");
+             $("#video-source").attr('src','./video/LuminarMinianimation.mp4')
             $("#power-text").html("Luminar Mini");
           }, 1000);
           break;
