@@ -1,30 +1,20 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ["./public/*.html"],
-  darkMode: 'media', // or 'media' or 'class'
+  content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {
-      spacing: {
-        "big-img": "37.5rem",
-      },
-      fontSize: {
-        coinbase: "3.875rem",
-      },
-      animation: {
-        fade: "fadeOut 2s ease-in-out",
-      },
-
-      // that is actual animation
-      keyframes: (theme) => ({
-        fadeOut: {
-          "0%": { opacity: 1 },
-          "50%": { opacity: 0.5 },
-          "100%": { opacity: 0 },
-        },
-      }),
+    fontFamily:{
+      lato: ['lato', 'sans-serif']
     },
-  },
-  variants: {
-    extend: { grayscale: ["hover", "focus"] },
+    screens: {
+      'xs': '320px',
+      'sm': '640px',
+      'md': '700px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
+    extend: {},
   },
   plugins: [],
-};
+}
+

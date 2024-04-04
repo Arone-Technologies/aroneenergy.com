@@ -127,217 +127,33 @@
     ></script>
     <link rel="stylesheet" href="./css/tailwind.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./myStyle.css" />
+
+
     <meta
       data-n-head="1"
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <style>
 
-      .swiper {
-        height: 250px;
-      }
-     
-.swiper-pagination-bullet {
-        background-color: #fff;
-        
-    }
-      .swiper-slide > div{
-        height: 100%;
-        min-height: 100%;
-        background-color: #fff;
-      }
-      .swiper-slide {
-        text-align: center;
-        height: 250px;
-        width: 100px;
-
-        /* Center slide text vertically */
-         display: -webkit-box;
-        display: -ms-flexbox;
-         display: -webkit-flex;
-        display: flex;   
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        color: #000;
-      }
-
-      @font-face {
-        font-family: montesserat;
-        src: url("./css/Montserrat-Regular.ttf");
-      }
-      .bg-lemon-green {
-        background: rgb(227, 255, 0);
-      }
-      @font-face {
-        font-family: montesserat-medium;
-        src: url("./css/FontsFree-Net-Montserrat-Medium.ttf");
-      }
-
-      @font-face {
-        font-family: montesserat-bold;
-        src: url("./css/Montserrat-Bold.ttf");
-      }
-
-      .desktop-nav > white {
-        color: white;
-      }
-
-      
-
-      .bg-arone-blue {
-        background: url(./images/bg-arone-blue.png);
-        background-size: cover;
-      }
-
-      .bg-Luminar-mini {
-        /* background: url("./images/Luminar-mini.png"); */
-        background-size: cover;
-        background-position: center;
-        
-      }
-
-      .bg-Luminar-pro {
-        /*  background: url("./images/Luminar-mini.png"); */
-        background-size: cover;
-        background-position: center;
-        
-      }
-
-      .bg-Luminar-max {
-        /* background: url("./images/Luminar-max.png"); */
-        /* background: url("./images/Luminar-mini.png"); */
-        background-size: cover;
-        background-position: center;
-      }
-
-      .bg-Luminar {
-        background: url("./images/Luminar-image.png");
-        background-size: cover;
-        background-position: center;
-      }
-
-      @media only screen and (max-width: 600px) {
-        .bg-banner {
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),
-              rgba(0, 0, 0, 0.3)
-            ),
-            url(./images/banner-mobile.png);
-          background-size: auto;
-          /* background-position: center; */
-          background-repeat: no-repeat;
-          width: 100vw;
-          background-attachment: fixed;
+    <script>
+      function scrollToSection(sect2) {
+        var section = document.getElementById(sect2);
+        if (section) {
+          section.scrollIntoView({behavior:"smooth", block:"start"});
         }
       }
-      @media only screen and (min-width: 600px) {
-        .bg-banner {
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),
-              rgba(0, 0, 0, 0.3)
-            ),
-            url(./images/banner.jpg);
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
-      }
-      .float {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 40px;
-        right: 40px;
-        background-color: #25d366;
-        color: #fff;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 3px #999;
-        z-index: 100;
-      }
-
-      .my-float {
-        margin-top: 16px;
-      }
-    </style>
+    </script> 
   </head>
 
   <body class="">
-    <div>
-      <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-          <div
-            class="modal__container"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-1-title"
-          >
-            <header class="modal__header">
-              <h2 class="modal__title" id="modal-1-title">Buy the Luminar</h2>
-              <button
-                class="modal__close"
-                aria-label="Close modal"
-                data-micromodal-close
-              ></button>
-            </header>
-            <main class="modal__content" id="modal-1-content">
-              <a
-                class="flex flex-wrap my-10"
-                href="https://paystack.com/buy/luminar-pro"
-              >
-                <img
-                  src="./images/LuminarRecovered.png"
-                  alt="Luminarrrrrr"
-                  class="w-[200px] h-[100px] border-4rounded"
-                />
-                <div class="mx-2 lg:mx-8 mt-8">
-                  <div class="text-base font-bold text-center">Luminar Pro</div>
-                  <div class="text-sm my-4 font-medium text-center">
-                    Buy now at N340,000
-                  </div>
-                </div>
-              </a>
-
-              <a
-                class="flex flex-wrap"
-                href="https://paystack.com/buy/luminar-max"
-              >
-                <img
-                  src="./images/LuminarRecovered.png"
-                  alt="Luminar"
-                  class="w-[200px] h-[100px] border-4rounded"
-                />
-                <div class="mx-2 lg:mx-8 mt-8">
-                  <div class="text-base font-bold text-center">Luminar Max</div>
-                  <div class="text-sm my-4 font-medium text-center">
-                    Buy now at N570,000
-                  </div>
-                </div>
-              </a>
-              <div></div>
-            </main>
-            <footer class="modal__footer">
-              <!-- <button class="modal__btn modal__btn-primary">Continue</button>
-              <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button> -->
-            </footer>
-          </div>
-        </div>
-      </div>
-
+    
       <!-- Navigation Bar -->
 
       <header>
   <nav id="nav-bar" class="navbar bgNav fixed">
     <a href="#home">
-    <img src="./images/arone-logo-2.png" alt="logo" class="aroneLogo"/>
+    <img src="./images/arone-logo-2.png" alt="logo" class="h-[3rem] w-[10rem] sm:ml-6 md:ml-10 ml-4"/>
     </a>
     <ul>
     <li><a  class="active" href="#home">Home</a></li>
@@ -355,44 +171,46 @@
 </header>
       <!-- Home Section -->
 
-  <section id="home" class="homeSec">
-            <div class="homeDiv">
-            <div class="homeText">
-              <h1>Luminar 2.0</h1>
-              <p class="homeTxt">The all new Luminar has a refined selection of materials for superior performance, longevity and everyday use</p>
+  <section id="home" class="homeSec ">
+            <div class="md:flex md:flex-row sm:flex-col px-7 w-[100%] py-11">
+            <div class="align-text-top md:w-[50%] xs:w-[100%] flex flex-col xs:justify-center md:justify-start">
+              <h1 class="lg:mt-12 font-extrabold text-white text-[64px] myFont">Luminar 2.0</h1>
+              <p class="text-white md:mb-10 max-lg:text-[20px] text-[30px] myFont">The all new Luminar has a refined selection <br/> of materials for superior performance,<br/> longevity and everyday use</p>
 
-              <button class="homeBtn">Learn more</button>
+              <button onclick="scrollToSection('sect2')" class="  homeBtn w-[120px] h-10 text-lg xs:mb-5">Learn more</button>
               
             </div>
-              <img src="./images/Luminar filleted diplay 1.png" alt="Luminar" class="homeImg1"/>
             
+            <div class="md:w-[50%] md:justify-end flex  xs:justify-center xs:w-[100%]">
+              <img src="./images/Luminar filleted diplay 1.png" alt="Luminar" class="lg:h-[450px] lg:w-[450px] lg:mt-7 md:mt-2 sm:mt-1 w-[300px] h-[300px] md:self-start xs:self-center flex"/>
+            </div>
             </div>
 
           </section>
           
           <!-- Super Compact -->
 
-          <section id="sect2" class="sec2" >
-            <div class="sect2_text">
-              <h1>SUPER COMPACT & SUPER STRONG</h1>
-              <p>Our chassis securely houses the battery and power electronics, ensuring safety and incredible portability. The new Luminar features top-quality materials for performance and longevity </p>
+          <section id="sect2" class="bg-white w-full md:flex md:flex-row sm:flex-col pl-7 pr-9 py-2 md:py-10" >
+            <div class="md:w-1/2 md:mt-10  mb-10 xs:w-full flex flex-col xs:justify-center md:justify-start">
+              <h1 class="lato font-extrabold xs:mt-10 xs:text-[40px] lg:text-[64px] mb-10">SUPER COMPACT <br /> & SUPER STRONG</h1>
+              <p class="lato font-normal text-black xs:text-[20px] lg:text-[30px] ">Our chassis securely houses the battery and power electronics, ensuring safety and incredible portability. The new Luminar features top-quality materials for performance and longevity </p>
 
             </div >
-            <div class="l3">
-              <img src="./images/L3 1.png" class="sect2_img"/>
+            <div class="md:w-1/2 xs:w-full flex md:justify-end xs:justify-center ">
+              <img src="./images/L3 1.png" class="lg:h-[700px] lg:w-[480px] md:-rotate-6 h-[500px] w-[400px] -rotate-90 flex xs:self-center max-sm:mx-10" />
             </div>
             
           </section>
      
             <!-- SECTION 3 -->
 
-          <section id="sect3" class="sec3">
-            <div class="sec3_div">
-            <div  class="sect3_text">
-              <h1>LONGER LIFESPAN</h1>
-              <p>The Luminar 2.0 includes a higher grade lithium battery for continuous power use, greater life span while delivering greater battery capacity.</p>
+          <section id="sect3" class="sec3 w-full md:h-[180vh] xs:h-[65vh]">
+            <div class=" w-full flex flex-col items-center">
+            <div  class="xs:w-[80%] lg:w-1/2 mt-[50px] xs:self-center">
+              <h1 class=" lato text-black font-extrabold  text-[38px] md:text-[60px] text-center mt-12 md:mt-32 md:mb-6">LONGER LIFESPAN</h1>
+              <p class="lato xs:text-[20px] md:text-[30px] text-center">The Luminar 2.0 includes a higher grade lithium battery for continuous power use, greater life span while delivering greater battery capacity.</p>
             </div>
-            <img src="./images/Luminar Pack v4v 1.png" alt="Luminar Pack v4v" class="sect3_img"/>
+            <img src="./images/Luminar Pack v4v 1.png" alt="Luminar Pack v4v" class="sect3_img w-1/2"/>
           </div>
           </section>
 
@@ -400,14 +218,14 @@
 
       
 
-          <section id="sect4" class="sec4" >
-            <div class="sect4_text">
-              <h1>4x POWER EFFICIENCY</h1>
-              <p>The Luminar 2.0 includes the new power core 2.0 an SMD integrated circuit, solid state component, to regulate all Power Functions of the Luminar </p>
+          <section id="sect4" class="md:flex bg-white px-12 md:py-10" >
+            <div class="xs:w-full md:w-1/2">
+              <h1 class="lato xs:text-[45px] md:text-[50px] lg:text-[70px] font-extrabold md:mt-10 mb-10">4x POWER <br /> EFFICIENCY</h1>
+              <p class="lato text-[20px] lg:text-[30px] ">The Luminar 2.0 includes the new power core 2.0 an SMD integrated circuit, solid state component, to regulate all Power Functions of the Luminar </p>
 
             </div >
-            <div class="sec4_img">
-              <img src="./images/L2.png" class="sect4_img"/>
+            <div class="sec4_img w-full justify-center md:w-1/2 flex md:justify-end">
+              <img src="./images/L2.png" class="sect4_img h-[450px] w-[220px] max-sm:rotate-90 lg:h-[500px] lg:w-[350px] md:mr-7 -mt-5"/>
             </div>
             
           </section>
@@ -415,15 +233,15 @@
 
               <!-- SECTION 5 -->
           <section id="videoSect" class="sec5">
-            <div class="sec5_div">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/IaetfgFTAqM?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            <div class="sec5_div w-full">
+              <iframe class="w-full h-[500px] max-sm:py-14 md:py-7" width="560" height="315" src="https://www.youtube.com/embed/IaetfgFTAqM?autoplay=1" frameborder="0" allowfullscreen></iframe>
           </div>
           </section>
 
               <!-- SECTION 6 -->
           
           <section id="contact" class="sec6">
-            <div class="sect6">
+            <div class="sect6 w-full grid xs:grid-cols-2 md:grid-cols-4 px-10">
             
               <div class="sect6Sub">
                 <h3>Company</h3>
@@ -448,13 +266,13 @@
               </div>
               <div  class="sect6Sub">
                 <h3>Follow us</h3>
-                <div class="insta">
-                  <img src="./images/instagram.png" class="instagram"/>
-                <a href=""><li>@aroneenergy</li></a>
+                <div class="insta flex">
+                  <a href="https://www.instagram.com/aroneenergy?igsh=MXg4bmxkbjk0ZWxtaA=="><img src="./images/instagram.png" class="instagram"/></a>
+                <a href="https://www.instagram.com/aroneenergy?igsh=MXg4bmxkbjk0ZWxtaA=="><li>@aroneenergy</li></a>
               </div>
               </div>
             </div>
-            <div class="copyright">
+            <div class="copyright pb-10">
               <p>Copyright @aroneenergy 2024</p>
             </div>
           </section>
