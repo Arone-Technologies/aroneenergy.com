@@ -3,7 +3,8 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     fontFamily:{
-      lato: ['lato', 'sans-serif']
+      lato: ['lato', 'sans-serif'],
+      myFont: ['DM Sans', 'sans-serif']
     },
     screens: {
       'xs': '320px',

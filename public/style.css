@@ -9,9 +9,6 @@
  padding: 0;
  box-sizing: border-box;
 }
-body {
- background-color: #000;
-}
 header {
  background-color: #000;
 }
@@ -20,7 +17,6 @@ header {
  flex-wrap: wrap;
  justify-content: space-between;
  padding: 20px 10px;
- 
  background-color: white;
 }
 .navbar h1 {
@@ -32,11 +28,14 @@ header {
 }
 .navbar ul {
   display: flex;
+
  }
 .navbar li {
   list-style-type: none;
   margin-right: 20px;
   font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 12px;
  }
 /* .navbar button a.active {
  color: rgb(2, 2, 59);
@@ -99,18 +98,22 @@ nav.open .hamburger-menu .line:nth-of-type(3) {
  nav ul {
   position: absolute;
   top: 5rem;
-  left: 0;
+  right: 0;
   flex-direction: column;
   height: auto;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
   background-color: white;
-  transform: translateX(-20rem);
+  transform: translateX(20rem);
   transition: transform 0.5s ease-in-out;
+  padding-left: 15px;
+  padding-right: 15px;
  }
  nav ul li {
-  padding: 1rem 4rem 2rem 4rem;
+  padding: 0rem 2rem 1.5rem 4rem;
   width: 100%;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
  }
  nav ul li:not(:last-child) {
   border-bottom: 1px solid #ccc;

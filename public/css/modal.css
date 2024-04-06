@@ -204,10 +204,11 @@
   background-repeat: no-repeat;
   background-position:center;
   margin-top: 5.7rem;
-  
 }
-.myFont h1, p {
-font-family: 'Lato';
+
+.myFont {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 .homeText p {
  /* width: 550px;
@@ -218,10 +219,11 @@ font-family: 'Lato';
 .homeBtn {
   background-color: #B6FF89;
   border-radius: 20px;
-  /* padding: 0.5rem 1.5rem ; */
-  font-family: 'Lato';
+  padding: 0.5rem 1.5rem ;
+  font-family: 'DM Sans';
   color: black;
-  border: 1px solid black;
+  font-size: 22px;
+
 }
 .sec3 {
   background-image: url(../images/bg\ 1.png);
@@ -230,12 +232,12 @@ font-family: 'Lato';
   background-position:center;
   background-color: white;
 }
-.sec5 {
+/* .sec5 {
   background-image: url(../images/homeBg.png);
   background-size:cover;
   background-repeat: no-repeat;
   background-position:center;
-}
+} */
 .sec6 {
   background-image: url(../images/bg2.png);
   background-size:cover;
@@ -245,15 +247,16 @@ font-family: 'Lato';
 }
 .sect6Sub h3 {
   font-weight: bold;
+  font-family: "DM Sans", sans-serif;
   margin-top: 7rem;
    margin-bottom: 2rem;
-  font-size: 25px;
 }
 
 li {
   list-style-type: none;
   margin-bottom: 1rem;
-  font-size: 15px;
+
+  font-family: "DM Sans", sans-serif;
 }
 .instagram {
   height: 20px;
@@ -265,7 +268,7 @@ li:hover {
 }
 .copyright p {
   text-align: center;
-  margin-top: 5rem;
+  font-family: "DM Sans", sans-serif;
 }
 /*
 
