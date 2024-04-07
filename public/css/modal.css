@@ -217,11 +217,11 @@ font-family: 'Lato';
 /* line-height: 120px; */
 }
 .homeBtn {
-  background-color: #B6FF89;
+  background-color: #02AD64;
   border-radius: 20px;
   padding: 0.5rem 1.5rem ;
   font-family: 'DM Sans';
-  color: black;
+  color: white;
   font-size: 22px;
 
 }
@@ -269,6 +269,22 @@ li:hover {
 .copyright p {
   text-align: center;
   font-family: "DM Sans", sans-serif;
+}
+.insta img {
+  margin-right: 5px;
+}
+
+.first{
+  background-image: url(../images/Contact.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aboutUs {
+  background-image: url(../images/aboutUs.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*
 

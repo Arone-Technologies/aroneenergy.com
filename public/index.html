@@ -50,7 +50,7 @@
       href="https://use.fontawesome.com/04825b4eb0.css"
       media="all"
     />
-    <link rel="stylesheet" href="" />
+  
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -83,48 +83,15 @@
       name="apple-mobile-web-app-title"
       content="aroneenergy.com"
     />
-    <link
-      data-n-head="1"
-      rel="icon"
-      type="image/x-icon"
-      href="/images/favicon.ico"
-    />
-    <link
-      data-n-head="1"
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
-    />
-    <link
-      data-n-head="1"
-      data-hid="shortcut-icon"
-      rel="shortcut icon"
-      href="/_nuxt/icons/icon_64x64.e3e9fb.png"
-    />
-    <link
-      data-n-head="1"
-      data-hid="apple-touch-icon"
-      rel="apple-touch-icon"
-      href="/_nuxt/icons/icon_512x512.e3e9fb.png"
-      sizes="512x512"
-    />
+    
+    
+    
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/modal.css" />
-    <script
-      data-n-head="1"
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <!-- axios -->
-    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-    <script
-      data-n-head="1"
-      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
-    ></script>
+    
     <link rel="stylesheet" href="./css/tailwind.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./myStyle.css" />
@@ -146,6 +113,8 @@
         }
       }
     </script> 
+
+    
   </head>
 
   <body class="">
@@ -155,7 +124,7 @@
       <header>
   <nav id="nav-bar" class="navbar bgNav fixed">
     <a href="#home">
-    <img src="./images/arone-logo-2.png" alt="logo" class="h-[3rem] w-[10rem] sm:ml-6 md:ml-10 ml-4"/>
+    <img src="./images/arone-logo-2.png" alt="logo" class="h-[3rem] w-[10rem] mt-2  ml-5"/>
     </a>
     <ul>
     <li><a  class="active" href="#home">Home</a></li>
@@ -173,13 +142,13 @@
 </header>
       <!-- Home Section -->
 
-  <section id="home" class="homeSec ">
+  <section id="home" class="homeSec lg:h-[100vh]">
             <div class="md:flex md:flex-row sm:flex-col px-7 w-[100%] py-11">
             <div class="align-text-top md:w-[50%] xs:w-[100%] flex flex-col xs:justify-center md:justify-start">
-              <h1 class="lg:mt-12 font-bold mb-10 text-white text-[50px] myFont">LUMINAR 2.0</h1>
-              <p class="text-white mb-14 max-lg:text-[20px] text-[30px] myFont">The all new Luminar has a refined selection <br/> of materials for superior performance,<br/> longevity and everyday use</p>
+              <h1 class="lg:mt-12 font-bold mb-6 text-white text-[50px] myFont">LUMINAR 2.0</h1>
+              <p class="text-white mb-8 max-lg:text-[20px] text-[25px] myFont">The all new Luminar has a refined <br/> selection  of materials for superior <br/>  performance,longevity and everyday <br /> use</p>
 
-              <button onclick="scrollToSection('sect2')" class="  homeBtn w-[200px] h-12 xs:mb-8">Learn more</button>
+              <button onclick="scrollToSection('sect2')" class="  homeBtn w-[180px] h-12 xs:mb-8">Learn more</button>
               
             </div>
             
@@ -192,14 +161,14 @@
           
           <!-- Super Compact -->
 
-          <section id="sect2" class="bg-white w-full md:flex md:flex-row sm:flex-col pl-7 pr-9 py-2 md:py-10" >
-            <div class="md:w-1/2 md:mt-10  mb-10 xs:w-full flex flex-col xs:justify-center md:justify-start">
-              <h1 class="myFont font-bold xs:mt-10 xs:text-[40px] lg:text-[64px] mb-10">SUPER COMPACT <br /> & SUPER STRONG</h1>
-              <p class="myFont font-normal text-black xs:text-[20px] lg:text-[30px] ">Our chassis securely houses the battery and power electronics, ensuring safety and incredible portability. The new Luminar features top-quality materials for performance and longevity </p>
+          <section id="sect2" class="bg-white w-full md:flex md:flex-row sm:flex-col pl-7 pr-9 py-2 md:py-10 lg:h-[100vh]" >
+            <div class="md:w-[60%] md:mt-10  mb-10 xs:w-full flex flex-col xs:justify-center md:justify-start">
+              <h1 class="myFont font-bold xs:mt-10 md:mt-20 xs:text-[40px] lg:text-[64px] mb-10 leading-[75px]">SUPER COMPACT <br /> & SUPER STRONG</h1>
+              <p class="myFont font-normal text-black xs:text-[20px] lg:text-[25px] ">Our chassis securely houses the battery and power electronics, ensuring safety and incredible portability. The new Luminar features top-quality materials for performance and longevity </p>
 
             </div >
-            <div class="md:w-1/2 xs:w-[80%] flex md:justify-end  ">
-              <img src="./images/L3 1.png" class="lg:h-[750px] lg:w-[480px] md:-rotate-1 h-[500px] w-[400px] md:h-[600px] flex" />
+            <div class="md:w-[40%] xs:w-[100%] flex xs:justify-center md:justify-end  ">
+              <img src="./images/Untitled design.gif" class=" lg:w-[480px] h-[400px] w-[360px] md:h-[550px] flex" />
             </div>
             
           </section>
@@ -208,9 +177,9 @@
 
           <section id="sect3" class="sec3 w-full h-auto">
             <div class=" w-full flex flex-col items-center  py-16 md:py-32 bg-blend-overlay">
-            <div  class="xs:w-[80%] lg:w-1/2 mt-[50px] xs:self-center">
+            <div  class="xs:w-[80%] lg:w-1/2 xs:self-center">
               <h1 class=" myFont text-black font-bold  text-[38px] md:text-[60px] text-center md:mb-6">LONGER LIFESPAN</h1>
-              <p class="myFont xs:text-[20px] md:text-[30px] text-center">The Luminar 2.0 includes a higher grade lithium battery for continuous power use, greater life span while delivering greater battery capacity.</p>
+              <p class="myFont xs:text-[20px] md:text-[25px] text-center">The Luminar 2.0 includes a higher grade lithium battery for continuous power use, greater life span while delivering greater battery capacity.</p>
             </div>
             <img src="./images/Luminar Pack v4v 1.png" alt="Luminar Pack v4v" class="w-[300px] h-[300px] md:h-[350px] md:w-[400px] lg:h-[450px] lg:w-[550px] "/>
           </div>
@@ -220,23 +189,23 @@
 
       
 
-          <section id="sect4" class="md:flex bg-white px-12 md:py-10" >
+          <section id="sect4" class="md:flex bg-white px-7 md:py-10 lg:h-[100vh]" >
             <div class="xs:w-full md:w-1/2">
               <h1 class="myFont xs:text-[45px] md:text-[50px] lg:text-[70px] font-bold md:mt-10 mb-10">4x POWER <br /> EFFICIENCY</h1>
-              <p class="myFont text-[20px] lg:text-[30px] ">The Luminar 2.0 includes the new power core 2.0 an SMD integrated circuit, solid state component, to regulate all Power Functions of the Luminar </p>
+              <p class="myFont text-[20px] lg:text-[25px] ">The Luminar 2.0 includes the new power core 2.0 an SMD integrated circuit, solid state component, to regulate all Power Functions of the Luminar </p>
 
             </div >
             <div class="sec4_img w-full justify-center md:w-1/2 flex md:justify-end">
-              <img src="./images/L2.png" class="sect4_img h-[450px] w-[220px] md:h-[520px] lg:h-[700px] lg:w-[350px] md:mr-7 -mt-5 md:-mt-16"/>
+              <img src="./images/ezgif.com-animated-gif-maker.gif" class="sect4_img h-[450px] w-[450px] lg:h-[500px] lg:w-[500px] md:mr-7  "/>
             </div>
             
           </section>
 
 
               <!-- SECTION 5 -->
-          <section id="videoSect" class="sec5">
+          <section id="videoSect" class="sec5 lg:h-[100vh]">
             <div class="sec5_div w-full flex h-[500px] justify-center">
-              <video src="./video/Luminar-1.mp4" width="1200px" autoplay controls loop >
+              <video src="./video/LuminarFinalAmendedV.mp4" type="video/mp4" width="600px" autoplay controls loop >
                     Your browser does not support the video tag
               </video>
           </div>
@@ -250,8 +219,8 @@
               <div class="sect6Sub">
                 <h3 class="text-[15px] md:text-[20px] lg:text-[25px]">Company</h3>
                 <ul>
-                  <a href=""><li class="text-[12px] md:text-[18px]">About us</li></a>
-                  <a href=""><li class="text-[12px] md:text-[18px]">Careers</li></a>
+                  <a href="./pages/aboutUs.html"><li class="text-[12px] md:text-[18px]">About us</li></a>
+                  <a href="./pages/career.html"><li class="text-[12px] md:text-[18px]">Careers</li></a>
                 </ul>
               </div>
               <div class="sect6Sub">
@@ -265,14 +234,22 @@
               <div class="sect6Sub">
                 <h3 class="text-[15px] md:text-[20px] lg:text-[25px]">Support</h3>
                 <a href=""><li class="text-[12px] md:text-[18px]">Contact us</li></a>
-                <a href=""><li class="text-[12px] md:text-[18px]">Repairs and</li></a>
-                <a href=""><li class="text-[12px] md:text-[18px]">Maintenance</li></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeh7C9qMC0MoMk6qAX81gbdJ5A9W0GYOREEoHmOrrXo8yMvJQ/viewform?usp=share_link"><li class="text-[12px] md:text-[18px]">Repairs and <br /> Maintenance</li></a>
               </div>
               <div  class="sect6Sub">
                 <h3 class="text-[15px] md:text-[20px] lg:text-[25px]">Follow us</h3>
                 <div class="insta flex">
                   <a href="https://www.instagram.com/aroneenergy?igsh=MXg4bmxkbjk0ZWxtaA=="><img src="./images/instagram.png" class=" w-[15px] h-[15px] mt-[3px] md:mt-[5px] md:w-[20px] md:h-[20px]"/></a>
                 <a href="https://www.instagram.com/aroneenergy?igsh=MXg4bmxkbjk0ZWxtaA=="><li class="text-[12px] md:text-[18px]">@aroneenergy</li></a>
+                </div>
+                <div class="insta flex">
+                <a href="mailto:info@aroneenergy.com"><img src="./images/mail.png" class=" w-[15px] h-[15px] mt-[3px] md:mt-[5px] md:w-[20px] md:h-[20px]"/></a>
+                <a href="mailto:info@aroneenergy.com"><li class="text-[12px] md:text-[18px]">info@aroneenergy.com</li></a>
+                </div>
+                <div class="insta flex">
+                <img src="./images/location_535239.png" class=" w-[15px] h-[15px] mt-[3px] md:mt-[5px] md:w-[20px] md:h-[20px]"/>
+                <li class="text-[12px] md:text-[18px]">Enugu, Nigeria</li>
+              </div>
               </div>
               </div>
             </div>
@@ -281,127 +258,11 @@
             </div>
           </section>
 
-      <!-- <section class="bg-arone-blue text-white">
-        <h2
-          class="py-8 lg:py-12 text-xl lg:text-3xl font-semibold text-center text-gray-100"
-        >
-          Customer Stories
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 py-12">
-          <div class="col-span-1 flex justify-center md:justify-end py-10">
-            
-            <img
-              src="./images/Luminar-user.jpeg"
-              class="w-68 xl:w-72 h-64 relative md:-right-20"
-		 alt="Satisfied Luminar user"
-            />
-            
-          </div>
-          <div
-            class="bg-black text-white mx-8 col-span-2 min-h-80 p-10 md:p-20"
-          >
-            "The Luminar is a dream come through for me. Now I don’t spend on
-            fuel anymore and I can be guaranteed of electricity throughout my
-            work hours."
-            <div class="text-right mt-1">- Chinyere Udoh</div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- Section 10 -->
      
     </div>
+
+    <script src="menu.js"></script>
   </body>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="menu.js"></script>
-
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-       
-      },
-      slidesPerView:1,
-      breakpoints: {
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-        },
-       autoplay: {
-       delay: 5000,
-         disableOnInteraction: false,
-      },
-    });
-
-    let state = 1;
-    MicroModal.init();
-    function switchState() {
-      state = (state + 1) % 3;
-    }
-    function ToggleSlide() {
-      // remove all animate-fade classes
-      document.querySelectorAll(".animate-fade").forEach(function (el) {
-        el.classList.remove("animate-fade");
-        switchState();
-      });
-      switch (state) {
-        case 1:
-          $("#features-1").addClass("animate-fade");
-          $("#features-3").addClass("animate-fade");
-          $("#power-text").addClass("animate-fade");
-          $("#anim-power-image").addClass("animate-fade");
-          setTimeout(() => {
-            // $("#anim-power-image").removeClass("bg-Luminar");
-            $("#features-1").addClass("hidden");
-            $("#features-3").addClass("hidden");
-            $("#features-2").removeClass("hidden");
-            // $("#anim-power-image").addClass("bg-Luminar-pro");
-            $("#video-source").attr('src','./video/Luminarv31proanimation(1).mp4')
-            $("#power-text").html("Luminar Pro");
-          }, 1000);
-          break;
-        case 2:
-          $("#features-1").addClass("animate-fade");
-          $("#features-2").addClass("animate-fade");
-          $("#power-text").addClass("animate-fade");
-          $("#anim-power-image").addClass("animate-fade");
-          setTimeout(() => {
-            // $("#anim-power-image").removeClass("bg-Luminar");
-            $("#features-1").addClass("hidden");
-            $("#features-2").addClass("hidden");
-            $("#features-3").removeClass("hidden");
-            $("#video-source").attr('src','./video/LuminarMaxanimation.mp4')
-            $("#power-text").html("Luminar Max");
-          }, 1000);
-          break;
-        default:
-          $("#features-2").addClass("animate-fade");
-          $("#features-3").addClass("animate-fade");
-          $("#power-text").addClass("animate-fade");
-          $("#anim-power-image").addClass("animate-fade");
-          setTimeout(() => {
-            // $("#anim-power-image").removeClass("bg-Luminar");
-            $("#features-2").addClass("hidden");
-            $("#features-3").addClass("hidden");
-            $("#features-1").removeClass("hidden");
-            // $("#anim-power-image").addClass("bg-Luminar-mini");
-             $("#video-source").attr('src','./video/LuminarMinianimation.mp4')
-            $("#power-text").html("Luminar Mini");
-          }, 1000);
-          break;
-      }
-    }
-    $("#right-arrow").on("click", ToggleSlide);
-    $("#left-arrow").on("click", ToggleSlide);
-    $("#buy-now").on("click", function () {
-      MicroModal.show("modal-1");
-    });
-    $("#buy-now-mobile").on("click", function () {
-      MicroModal.show("modal-1");
-    });
-    //
-  </script>
+  
 </html>
