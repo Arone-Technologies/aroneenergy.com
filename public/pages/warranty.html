@@ -12,14 +12,6 @@
     <link rel="stylesheet" href="../myStyle.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
- <script>
-      function scrollToSection(jobRoles) {
-        var section = document.getElementById(jobRoles);
-        if (section) {
-          section.scrollIntoView({behavior:"smooth", block:"start"});
-        }
-      }
-    </script> 
 
 </head>
 <body>
@@ -29,7 +21,7 @@
     <img src="../images/arone-logo-2.png" alt="logo" class="h-[3rem] w-[10rem] mt-2  ml-5"/>
     </a>
     <ul>
-    <li class="text-[14px] sm:text-[20px]"><a  class="active" href="../index.html">Home</a></li>
+    <li class="text-[14px] sm:text-[20px]"><a  class="active" href="#home">Home</a></li>
     <li class="text-[14px] sm:text-[20px]"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeh7C9qMC0MoMk6qAX81gbdJ5A9W0GYOREEoHmOrrXo8yMvJQ/viewform?usp=share_link">Care</a></li>
     <li class="text-[14px] sm:text-[20px]"><a href="https://paystack.shop/arone-energy">Buy Now</a></li>
     </ul>
@@ -43,58 +35,43 @@
   </nav>
 </header>
 
-
-<section class="first  h-auto lg:h-[100vh] mt-24">
-    <div class="flex px-5 w-[100%]  md:py-11">
-            <div class="align-text-top md:w-[60%] xs:w-[100%] flex flex-col xs:justify-center md:justify-start  lg:mt-14">
-              <h1 class="lg:mt-12 font-bold mb-3 lg:mb-6 text-white text-[30px] sm:text-[40px] md:text-[50px] myFont">Join our Journey </h1>
-              <p class="text-white mb-3 md:mb-8 max-md:text-[16px] text-[20px] myFont max-sm:w-[340px] w-[415px]">Familiarize yourself with Arone Energy and the talented team driving our innovative efforts - and contribute to shaping the future.</p>
-              <p class="text-white max-md:text-[16px] text-[20px] myFont mb-3 sm:mb-8">We are excited to receive your application!</p>
-
-              <button onclick="scrollToSection('jobRoles')" class=" font-myFont text-[15px] sm:text-[16px] md:text-[20px] homeBtn w-[180px] sm:w-[230px] h-12 lg:w-[300px] lg:h-16 xs:mb-8">See Available Roles</button>
-              
-            </div>
-            
-            <div class="md:w-[50%]  xs:w-[10%]">
-            </div>
-            </div>
-
+<section id="aboutUS_text">
+  <div class="usageG_text py-20 mt-20 px-5">
+     <h1 class="  text-[25px] sm:text-[30px] md:text-[40px]">Luminar Warranty Policy Coverage</h1>
+    <p>
+      Luminar Solar Grid System (SGS) warrants its product, Luminar, against defects in materials and workmanship for one (1) year from the date of purchase by the original end-user purchaser ("Warranty Period").
+    </p>
+    <p>
+      Warranty Services <br />  
+      During the Warranty Period, Luminar will, at its sole discretion, repair or replace any defective product or part with a new or refurbished product or part, free of charge. All replaced parts or products become the property of Luminar.
+    </p>
+    <p>
+      Exclusions <br />
+      This warranty does not cover damages caused by:
+    <ol>
+    <li>Misuse, abuse, or negligence. Modification, alteration, or repair by unauthorized personnel.</li>
+    <li>Acts of nature, such as lightning, flood, or fire.</li>
+    <li>Use of the product outside its intended purpose or specifications.</li>
+    </ol>
+  </p>
+    <p>
+      Claim Procedure <br />
+To obtain warranty service, the purchaser must contact Luminar Customer Support within the Warranty Period and provide proof of purchase. Luminar may require the defective product to be returned for inspection.
+    </p>
+    <p>
+      Limitation of Liability <br />
+Luminar's liability under this warranty is limited to the repair or replacement of the defective product or part. In no event shall Luminar be liable for any indirect, incidental, or consequential damages arising from the use of the product.
+    </p>
+    <p>
+      Governing Law <br />
+This warranty is governed by the laws of the jurisdiction where the product was purchased.
+</p>
+<p> Contact Information: For warranty service or inquiries, please send an email to <span class="text-red-500"><a href="mailto:info@aroneenergy.com">info@aroneenergy.com</a></span>. This warranty gives you specific legal rights, and you may also have other rights that vary from jurisdiction to jurisdiction.
+    </p>
+    </div>
 </section>
 
-<section id="jobRoles" class="jobRoles py-[100px]">
-<div class="roles flex flex-col gap-10 py-10 sm:py-16">
-  <div class="eachRoles flex justify-between px-7 md:px-14">
-    <div class="role_text">
-    <h1 class=" text-[18px] sm:text-[25px] md:text-[35px] font-bold font-myFont">Electronics Engineer</h1>
-    <p class=" text-[15px] sm:text-[18px] md:text-[28px] font-medium font-myFont">Location : Onsite</p>
-  </div>
-  <div class="role_img flex items-center">
-    <a href="https://forms.gle/rFTv3FWaRkhDbMjQ6"><img src="../images/arrow-point-to-right.png" class="xs:w-[20px] xs:h-[20px] sm:w-[30px] sm:h-[33px]" /></a>
-  </div>
-  </div>
-
-  <div class="eachRoles flex justify-between px-7 md:px-14">
-    <div class="role_text">
-    <h1 class="text-[18px] sm:text-[25px] md:text-[35px] font-bold font-myFont">Production Staff</h1>
-    <p class="text-[15px] sm:text-[18px] md:text-[28px] font-medium font-myFont">Location : Onsite</p>
-  </div>
-  <div class="role_img flex items-center">
-    <a href="https://forms.gle/rFTv3FWaRkhDbMjQ6"><img src="../images/arrow-point-to-right.png" class="xs:w-[20px] xs:h-[20px] sm:w-[30px] sm:h-[33px]"/></a>
-  </div>
-  </div>
-  <div class="eachRoles  flex justify-between px-7 md:px-14">
-    <div class="role_text">
-    <h1 class="text-[18px] sm:text-[25px] md:text-[35px] font-bold font-myFont">Security Personnel</h1>
-    <p class="text-[15px] sm:text-[18px] md:text-[28px] font-medium font-myFont">Location : Onsite</p>
-    </div>
-    <div class="role_img flex items-center">
-      <a href="https://forms.gle/rFTv3FWaRkhDbMjQ6"><img src="../images/arrow-point-to-right.png" class="xs:w-[20px] xs:h-[20px] sm:w-[30px] sm:h-[33px]"/></a>
-    </div>
-  </div>
-</div>
-</section>
-
- <section id="contact" class="sec6">
+<section id="contact" class="sec6">
             <div class="sect6 w-full px-5 md:px-10  grid grid-cols-2 sm:grid-cols-4 justify-between ">
             
               <div class="sect6Sub">
@@ -111,7 +88,6 @@
                 <a href="../pages/usageG.html"><li class="text-[13px] sm:text-[12px] md:text-[14px] sm:w-14 lg:w-32">Usage Guidelines</li></a>
               </div>
             
-              
               <div class="sect6Sub">
                 <h3 class="text-18px] md:text-[18px] lg:text-[25px]">Support</h3>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeh7C9qMC0MoMk6qAX81gbdJ5A9W0GYOREEoHmOrrXo8yMvJQ/viewform?usp=share_link"><li class="text-[13px] sm:text-[12px] md:text-[14px] max-md:w-[70px]">Repairs and Maintenance</li></a>

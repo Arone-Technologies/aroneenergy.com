@@ -222,7 +222,6 @@ font-family: 'Lato';
   padding: 0.5rem 1.5rem ;
   font-family: 'DM Sans';
   color: white;
-  font-size: 22px;
 
 }
 .sec3 {
@@ -252,18 +251,17 @@ font-family: 'Lato';
    margin-bottom: 2rem;
 }
 
-li {
+.sect6Sub li {
   list-style-type: none;
-  margin-bottom: 1rem;
-
   font-family: "DM Sans", sans-serif;
+  margin-bottom: 1rem ;
 }
 .instagram {
   height: 20px;
   width: 20px;
   margin-top: 2px;
 }
-li:hover {
+.sect6Sub li:hover {
   color: blue;
 }
 .copyright p {
@@ -293,137 +291,32 @@ font-style: normal;
 font-weight: 400;
 line-height: 42px;
 }
-/*
-
+.usageG_text h1, .usageG_text p {
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 1.5rem;
 }
-@media (max-width: 768px) {
-  .homeText {
-    text-align: left;
-    margin-bottom: 4rem;
-    width: auto !important;
-  }
-  .homeText h1 {
-width: 450px !important;
-font-size: 70px;
-margin-top: 1rem !important;
-  }
-  .homeImg1 {
-  top: 35rem !important;
-  left: 5rem !important;
-  height: 350px !important;
-  width: 330px !important;
+.usageG_text p {
+  font-size: 18px;
 }
-  .homeText p {
-    width: 450px !important;
-    font-size: 25px !important;
-  }
-  .homeDiv {
-    width: 100% !important;
-  }
-  .homeImg1 {
-    position: absolute;
-    top: 35rem;
-    left: 3rem;
-    display: block;
-    height: 450px;
-  width: 440px;
-    
-  }
-  .homeSec {
-  background-image: url(../images/homeBg.png);
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position:center;
-  height: 100vh !important;
-  max-width: 100% !important;
+.usageG_text ol li {
+font-size: 18px;
+list-style-type:decimal;
+margin-left:30px;
+font-family: "DM Sans", sans-serif;
+}
+.usageG_text ol {
+  margin-top: -1.5rem;
 }
 
-.sec3 {
-  height: 80vh !important;
-}
-.sect3_text h1 {
-  position: relative;
-width: 480px !important;
-font-family: 'Lato';
-font-style: normal;
-font-weight: 700;
-font-size: 50px !important;
-
-color: #000000;
-}
-.sect3_text p {
-  position: relative;
-width: 451px !important;
-font-family: 'Lato';
-font-style: normal;
-font-weight: 300;
-font-size: 20px !important;
-text-align: center;
-color: #000000;
-
-}
-.sect3_text {
-  margin-top: 5rem !important;
-}
-.sect3_img {
-  margin-left: 1rem !important;
-  height: 450px !important;
-  width: 500px !important;
-}
-.sec4 {
+@media (max-width: 800px) {
   
-  flex-direction: column;
-  height: 75vh !important;
-  
+.usageG_text p {
+  font-size: 15px;
 }
-.sect4_text {
-  margin-top: 2rem !important;
-}
-
-
-.sect4_img {
-  position: relative;
-  height: 350px !important;
-  width: 200px !important;
-  margin-left: 11rem !important;
- 
-  margin-bottom: 1.5rem !important;
-  
-}
-.sect6Sub h3 {
-  font-weight: bold;
-  margin-top: 5rem !important;
-   margin-bottom: 2rem;
-  font-size: 20px !important;
-}
-.sect6Sub li {
-  list-style-type: none;
-  margin-bottom: 1rem;
-  font-size: 12px !important;
-}
-.instagram {
-  height: 15px !important;
-  width: 15px !important;
-  
-}
-.copyright p {
-  font-size: 13px;
-  margin-top: 2rem !important;
-}
-.sec6 {
-  height: 35vh !important;
-}
-iframe {
-  overflow-y: hidden !important;
-}
-.sec5 {
-  height: 55vh !important;
+.usageG_text ol li {
+font-size: 15px;
+list-style-type:decimal;
+margin-left:20px;
+font-family: "DM Sans", sans-serif;
 }
 }
-
-
-.sect6, .insta {
-  display: flex;
-  justify-content: space-evenly;
-}
- */
